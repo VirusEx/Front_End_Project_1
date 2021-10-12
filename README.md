@@ -3,4 +3,5 @@
 Danny Ng - dannyng@csu.fullerton.edu
 <br>
 Matheo Maco - matheomaco@csu.fullerton.edu
+<br>
 Johnathan Carranza - johnathancarranza@csu.fullerton.edu
