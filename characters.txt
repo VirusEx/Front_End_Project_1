@@ -1,0 +1,230 @@
+Champion Categories
+
+If the original 40 Champs were organized by their roles according to the current SR metagame, it would look like this:
+
+Top Lane: Cho'Gath, Gangplank, Jax, Kayle, Malphite, Nasus, Singed, Sion, Teemo, Tryndamere
+
+Jungle: Amumu, Dr. Mundo, Evelynn, Fiddlesticks, Master Yi, Rammus, Shaco, Warwick
+
+AP Mid: Anivia, Annie, Heimerdinger, Kathus, Kassadin, Katarina, Morgana, Ryze, Twisted Fate, Veigar
+
+ADC: Ashe, Corki, Sivir, Tristana, Twitch
+
+Support: Alistar, Blitzcrank, Janna, Nunu, Soraka, Taric, Zilean
+
+
+
+1. Teamwork or Alone. alone = top/mid/jungle =0 , teamwork = bottom =1 .
+2. agreesive=0 or passive=1
+3. Physical=0 or magic=1, AD OR AP
+4. melee=0 or ranged=1
+5. tank=0 or glasscannon=1
+
+var q1 = 0;
+var q2 = 0;
+var q3 = 0;
+var q4 = 0;
+var q5 = 0;
+var Champion = none;
+
+
+
+string result = "";
+
+if q1==0{
+    result.pushback('0');
+}
+else {
+    result.pushback('1');
+}
+
+if q2==0{
+
+}
+
+....
+
+
+// append 
+
+var colors= ["red","blue"];
+	colors.push("yellow"); //["red","blue","yellow"]
+
+
+.........
+
+//compare result to below list
+
+switch (result) {
+    case '00000':
+        Champion = 'Garen';
+        break;
+    case '00001':
+        Champion = 'Master Yi';
+        break;
+}
+
+
+00000 = Garen           //alone, aggressive, physical, melee, tank
+00001 = MASTER YI       //alone, aggressive, physical, melee, glasscannon
+00010 = URGOT           //alone, aggressive, physical, ranged, tank
+00011 = Akshan          //alone, aggressive, physical, ranged, glasscannon
+00100 = Skarner         //alone, aggressive, magic, melee, tank
+00101 = Fizz            //alone, aggressive, magic, melee, glasscannon
+00110 = Malphite        //alone, aggressive, magic, ranged, tank
+00111 = Velkoz          //alone, aggressive, magic, ranged, glasscannon
+01000 = RAMMUS          //alone, passive, physical, melee, tank
+01001 = Zed             //alone, passive, physical, melee, glasscannon
+01010 = Nidalee         //alone, passive, physical, ranged, tank
+01011 = Vayne           //alone, passive, physical, ranged, glasscannon
+01100 = Singed          //alone, passive, magic, melee, tank
+01101 = Aurlion Sol     //alone, passive, magic, melee, glasscannon
+01110 = RYZE            //alone, passive, magic, ranged, tank
+01111 = Teemo           //alone, passive, magic, ranged, glasscannon
+
+// Bottom ADC
+    
+    10000 = Udyr         //Bottom,aggressive,physical,melee, tank
+    10001 = Sett         //Bottom, aggressive, physical, melee, glasscannon
+    10010 = Graves            // Bottom, aggressive, physical, ranged, tank
+    10011 = Quinn       // Bottom, aggressive, physical, ranged, glasscannon
+    10100 = Cho Gath            // Bottom, aggressive, magic, melee, tank
+    10101 = Kassadin            // Bottom, aggressive, magic, melee, glass cannon
+    10110 = Kennen            // Bottom, aggressive, magic, ranged, tank
+    10111 = KogMaw       //Bottom, aggressive, magic, ranged, glasscannon
+
+//Bottom Support
+    11000 = Alistar                // Bottom, passive, physical,melee, tank
+    11001 = Shaco                // Bottom, passive, physical, melee, glasscannon
+    11010 = Rakan                // Bottom, passive, physical, ranged, tank
+    11011 = Kindred                // Bottom, passive, physical, ranged, glasscannon
+    11100 = Blitzcrank                // Bottom, passive, magic, melee, tank
+    11101 = Braum               // Bottom, passive, magic, melee, glasscannon
+    11110 = MaoKai                // Bottom, passive, magic, ranged, tank
+    11111 = Janna                // Bottom, passive, magic, ranged, glasscannon
+
+
+
+
+
+Option1:
+
+00000
+00001
+00010
+00011
+00100
+00101
+00110
+00111
+01000
+01001
+01010
+01011
+01100
+01101
+01110
+01111
+10000
+10001
+10010
+10011
+10100
+10101
+10110
+10111
+11000
+11001
+11010
+11011
+11100
+11101
+11110
+11111
+
+
+
+
+
+if q1===0 && q2===0 && q3===0 && q4===0 && q5===0 { output = Janna}
+
+0 0 0 0 0
+1 0 0 0 0
+
+
+
+
+
+?
+
+
+
+
+
+
+
+Option2:
+if q1===0{
+    if q2===0{
+
+
+    }
+    else if q2===0{
+
+
+    }
+
+    }
+else if q1===1{
+
+}
+
+if q1===0
+    if q2===0
+        if q3===0
+            if q4===0
+                if q5===0
+                choose 1
+                else
+                choose 2
+            else if q4===1
+                if q5===0
+                choose 3
+                else
+                choose 4
+        else if q3===1
+            if q4===0
+                if q5===0
+                choose 5
+                else
+                choose 6
+            else if q4===1
+                if q5===0
+                choose 7
+                else
+                choose 8
+    else if q2===1
+        if q3===0
+            if q4===0
+                if q5===0
+                choose 1
+                else
+                choose 2
+            else if q4===1
+                if q5===0
+                choose 3
+                else
+                choose 4
+        else if q3===1
+            if q4===0
+                if q5===0
+                choose 5
+                else
+                choose 6
+            else if q4===1
+                if q5===0
+                choose 7
+                else
+                choose 8
+
+else
