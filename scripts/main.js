@@ -31,7 +31,6 @@
         });
         
     });
-    formHandler.addInputHandler(Validation.isCompanyEmail);
 
     quiz.printOrders(checkList.addRow.bind(checkList));
     
