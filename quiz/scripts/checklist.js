@@ -55,7 +55,7 @@
                 value: quiz.username
             });
 
-            var description = 'Champion for ' + quiz.username + ' is ';
+            var description = quiz.username + ' is ';
             description += quiz.champion;
 
             $label.append($checkbox);
